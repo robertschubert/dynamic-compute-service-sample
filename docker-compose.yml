@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  count_files:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "/path/to/your/input-dir:/mnt/input"
+      - "/path/to/your/output-dir:/mnt/output"
