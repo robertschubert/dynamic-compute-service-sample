@@ -7,15 +7,15 @@ Docker installation or Docker daemon running or podman installed.
 # Usage
 ## Python script 
 - The python script `copy_file.py` is located in the `src` directory. It counts files from the mounted input volume and writes the result to another file located in the output volume.
-- The script expects the input data in `mnt/input`.
-- The script writes the result to `mnt/output`.
+- The script expects the input data in `/data/input`.
+- The script writes the result to `/data/output`.
 
 ## Docker
 ### Docker build
 `docker build -t dynamic-container-job-sample:1.0.0 .`
 
 ### Docker run
-`docker run -v "/path/to/your/input-dir:/mnt/input" -v "/path/to/your/output-dir:/mnt/output" dynamic-container-job-sample:1.0.0`
+`docker run -v "/path/to/your/input-dir:/data/input" -v "/path/to/your/output-dir:/data/output" dynamic-container-job-sample:1.0.0`
 
 ## Docker-compose
 ### Docker-compose build

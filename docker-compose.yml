@@ -6,5 +6,5 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - "/path/to/your/input-dir:/mnt/input"
-      - "/path/to/your/output-dir:/mnt/output"
+      - "/path/to/your/input-dir:/data/input"
+      - "/path/to/your/output-dir:/data/output"

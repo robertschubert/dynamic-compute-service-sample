@@ -1,8 +1,8 @@
 import os
 
 # Define the input and output directories
-input_dir = '/mnt/input'
-output_dir = '/mnt/output'
+input_dir = '/data/input'
+output_dir = '/data/output'
 output_file = os.path.join(output_dir, 'result.txt')
 
 # Count the number of files in the input directory
